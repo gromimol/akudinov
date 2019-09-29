@@ -1,0 +1,73 @@
+/*tab*/ 
+.tab-list{
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #bac0c9;
+
+	li{
+		padding: 0 1.5em;
+		a{
+			display: block;
+			font-size: 1rem;
+			font-weight: 700;
+			color: $grey;
+			padding-bottom: .5em;
+			position: relative;
+			&::after{
+				content: '';
+				width: 100%;
+				height: 2px;
+				background-color: $green;
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				opacity: 0;
+				transition: all .3s;
+			}
+			&:hover{
+				color: $green;
+			}
+			&.active{
+				color: $green;
+				&::after{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&--white{
+		border-color: #628fc5;
+		li{
+			a{
+				color:rgba(#fff, .6);
+				&.active{
+					color: #fff;
+					&::after{
+						background-color: #fff;
+					}
+				}
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.tab-content{
+	height: 0;
+	overflow: hidden;
+	&.active{
+		display: block;
+		height: auto;
+		padding: 4.375em 0;
+	}
+	p{
+		font-size: 1.125rem;
+		line-height: 1.3;
+		text-align: center;
+		&:not(:last-child){
+			margin-bottom: 1em;
+		}
+	}
+}
