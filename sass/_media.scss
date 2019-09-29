@@ -274,6 +274,20 @@
 	.rate__features{
 		margin-bottom: 15px;
 	}
+	.offers__list{
+		margin: 0 -1em;
+	}
+	.offers__list li{
+		padding: 0 1em;
+		margin-bottom: 2em;
+	}
+	.offer__title{
+		font-size: 1.5rem;
+		overflow: hidden;
+	}
+	.offer__descr{
+		font-size: 1.25rem;
+	}
 }
 /*1024*/ 
 
@@ -359,6 +373,20 @@
 	.form__notice{
 		margin: 0 auto;
 	}
+	.offers__list li{
+		width: 50%;
+	}
+	.offer__title{
+		font-size: 1.8rem;
+	}
+	.offer__descr{
+		font-size: 1.5rem;
+	}
+	.offers{
+		.btn-container{
+			margin-top: 40px;
+		}
+	}
 }
 /*768*/ 
 
@@ -429,8 +457,15 @@
 		height: 8px;
 		border-width: 1px;
 	}
-	.slider-tips__text{
+	.slider-tips__text,
+	.block__descr{
 		font-size: 12px;
+	}
+	.block-title{
+		text-align: left;
+	}
+	.block__name{
+		font-size: 16px;
 	}
 }
 /*568*/
@@ -450,6 +485,40 @@
 		img{
 			height: 20px;
 			object-fit: contain;
+		}
+	}
+	.offers__list li{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.offer__item{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.offer__descr{
+		width: 100%;
+		margin-top: 20px;
+		font-size: 12px;
+		text-align: left;
+	}
+	.offer__img{
+		width: 50px;
+		height: 50px;
+		margin-bottom: 0;
+	}
+	.offer__title{
+		width: calc(100% - 60px);
+		text-align: left;
+		padding-left: 10px;
+		margin-bottom: 0;
+		height: auto;
+		font-size: 16px;
+	}
+	.offers .btn-container{
+		margin-top: 10px;
+		.btn{
+			width: 100%;
 		}
 	}
 }
