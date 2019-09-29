@@ -1,1 +1,279 @@
-/*Header*/ 
+/*Header*/
+.header{
+	position: relative;
+	z-index: 12;
+} 
+.header__top{
+	background-color: $dark-bg;
+	padding: 7px 0;
+	color: #fff;
+	font-size: 12px;
+	a{
+		color: #fff;
+		&:hover{
+			color: $blue;
+		}
+	}
+	.mobile-btn{
+		display: none;
+	}
+}
+.header__top__menu{
+	li{
+		text-transform: uppercase;
+		&:not(:last-child){
+			margin-right: 3em;
+		}
+		a{
+			display: block;
+			padding-bottom: 2px;
+			border-bottom: 1px dashed rgba(#fff, .3);
+			&:hover{
+				border-color: $blue;
+			}
+		}
+	}
+}
+.header__top__options__item{
+	&:not(:first-child){
+		padding-left: 1.6em;
+		margin-left: 1.6em;
+		border-left: 1px solid rgba(#fff, .2);
+	}
+	.ico{
+		margin-right: .75em;
+		width: 1em;
+		height: 1em;
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.user-btn{
+	display: inline-flex;
+	align-items: center;
+	margin-left: 1.25em;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 2px 1em;
+	height: 2em;
+	&:hover{
+		border-color: $blue;
+		transform: translateY(-2px);
+	}
+	.ico{
+		width: 1em;
+		height: 1em;
+		margin-right: .75em;
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.header__main{
+	position: relative;
+	background-color: #fff;
+	z-index: 12;
+	.container{
+		position: relative;
+	}
+}
+.logo{
+	.ico{
+		color: $blue-light;
+		width: 2.25em;
+		height: 2.25em;
+		flex: none;
+		font-size: 1rem;
+		margin-right: .75em;
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.text{
+	}
+	.text__title{
+		color: $blue-light;
+		font-size: 1.25em;
+		font-weight: 700;
+		display: block;
+	}
+	.text__subtitle{
+		font-size: .75em;
+		color: $grey;
+		white-space: nowrap;
+	}
+}
+
+.nav{
+	flex-grow: 1;
+	padding: 0 1.5em;
+}
+.menu{
+	font-size: .875rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 100%;
+	li{
+		flex-grow: 1;
+		&.active{
+			a{
+				background-color: $dark-bg;
+				color: #fff;
+			}
+			.text{
+				.ico{
+					transform: rotate(180deg);
+				}
+			}
+		}
+		a{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2.4em 1.1428em 2.5714em;
+			white-space: nowrap;
+			&:hover{
+				background-color: $dark-bg;
+				color: #fff;
+			}
+		}
+	}
+	.text{
+		.ico{
+			vertical-align: middle;
+			width: .5em;
+			height: .4em;
+			margin-right: 0;
+			margin-left: .1em;
+		}
+	}
+	.ico{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1em;
+		height: 1em;
+		margin-right: .5em;
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.dropmenu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: $dark-bg;
+	padding: 1em 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+	&.visible{
+		opacity: 1;
+		visibility: visible;
+	}
+	li{
+		width: 25%;
+		a{
+			display: block;
+			color: #9ea0a3;
+			font-size: .875em;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 1.4285em 1.4285em 1.4285em 3.8571em;
+			border-radius: 3px;
+			&:hover{
+				color: #fff;
+				background-color: #43474e;
+			}
+		}
+	}
+}
+.header__right__phones{
+	padding-left: 2em;
+	a{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		&:hover{
+			color: $green;
+		}
+	}
+	.ico{
+		width: .75em;
+		height: .75em;
+		margin-right: .4em;
+		transform: translateY(-.1em);
+	}
+	.header__right__mail{
+		display: none;
+	}
+}
+.main-phone{
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: $blue;
+	margin-bottom: .2em;
+}
+.second-phone{
+	font-size: .8375em;
+	.ico{
+		display: none;
+	}
+}
+
+.menu-visible{
+	.header__top{
+		opacity: .3;
+	}
+	#overlay{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.mobile-btn{
+	color: #fff;
+	width: 117px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	background-color: $blue;
+	display: none;
+}
+.burger{
+	width: 12px;
+	margin-right: 12px;
+
+	span{
+		display: block;
+		height: 2px;
+		background-color: #fff;
+		margin-bottom: 2px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.mobile-btn__text{
+	font-size: 12px;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+

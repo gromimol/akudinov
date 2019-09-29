@@ -1,13 +1,31 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansRegular.woff") format("woff");
+	font-family: "FiraSans";
+	src: url("../font/FiraSans/FiraSans-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "FiraSans";
+	src: url("../font/FiraSans/FiraSans-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "FiraSans";
+	src: url("../font/FiraSans/FiraSansMedium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "FiraSans";
+	src: url("../font/FiraSans/FiraSans.woff") format("woff");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansBold.woff") format("woff");
+	font-family: "FiraSans";
+	src: url("../font/FiraSans/FiraSansLight.woff") format("woff");
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 300;
 }
 
