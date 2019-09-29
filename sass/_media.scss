@@ -327,6 +327,9 @@
 			display: none;
 		}
 	}
+	.case__features__descr{
+		font-size: 1.2rem;
+	}
 }
 /*1023*/
 @media(max-width: 768px){
@@ -536,12 +539,36 @@
 			width: 100%;
 		}
 	}
+	.case__content{
+		width: 43em;
+		height: 47em;
+	}
+	.case-name,
+	.case__features__title{
+		font-size: 2.2rem;
+	}
+	.case-name__descr{
+		font-size: 1.8rem;
+	}
+	.case__title{
+		font-size: 2.4rem;
+	}
+	.case__features li{
+		width: 50%;
+	}
+	.case__features__descr{
+		font-size: 1.5rem;
+	}
 }
 
 @media(max-width: 399px){
 	.header__top .btn,
 	.header__right__phones a .ico{
 		display: none;
+	}
+	.case__content{
+		width: 48em;
+		height: 55em;
 	}
 }
 /*399*/ 

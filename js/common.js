@@ -61,7 +61,29 @@ $(document).ready(function () {
 	$('.rates-slider').slick({
 		slidesToShow: 3,
 		variableWidth: true,
+		arrows: false,
 		infinite: false,
+		responsive: [
+		{
+			breakpoint: 990,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+	$('.case-slider').slick({
+		slidesToShow: 2,
+		variableWidth: true,
+		infinite: false,
+		arrows: false,
 		responsive: [
 		{
 			breakpoint: 990,

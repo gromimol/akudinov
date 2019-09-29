@@ -1430,6 +1430,116 @@ b {
   .stages__descr p:not(:last-child) {
     margin-bottom: 1em; }
 
+/*case*/
+.case-slider {
+  max-width: 1400px;
+  margin: 0 auto; }
+  .case-slider .slick-list {
+    overflow: visible; }
+
+.case__item {
+  padding: 0 1.5em; }
+
+.case-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px; }
+
+.case__content {
+  position: relative;
+  border-radius: 5px;
+  width: 37.5em;
+  height: 41.25em; }
+  .case__content::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(77, 77, 77, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.case__body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  padding: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff; }
+
+.case-logo {
+  position: absolute;
+  top: 0;
+  right: 2.5em;
+  max-width: 6em; }
+
+.case__main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 3em; }
+
+.case__top {
+  margin-bottom: 2em; }
+
+.case-name {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700; }
+
+.case-name__descr {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6); }
+
+.case__title {
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: .75em; }
+
+.case__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2em; }
+  .case__features li {
+    width: 33.333%;
+    padding-right: 1em;
+    margin-bottom: 1em; }
+
+.case__features__title {
+  font-size: 1.6875em;
+  font-weight: 700;
+  margin-bottom: .4em; }
+
+.case__features__descr {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: .875em; }
+
 /*Footer*/
 /*media*/
 @media (max-width: 1600px) {
@@ -1764,7 +1874,10 @@ b {
       background-color: #22b573;
       color: #fff; }
     .tab-list li a::after {
-      display: none; } }
+      display: none; }
+
+  .case__features__descr {
+    font-size: 1.2rem; } }
 /*1023*/
 @media (max-width: 768px) {
   .banner-slider__title {
@@ -1977,11 +2090,35 @@ b {
   .offers .btn-container {
     margin-top: 10px; }
     .offers .btn-container .btn {
-      width: 100%; } }
+      width: 100%; }
+
+  .case__content {
+    width: 43em;
+    height: 47em; }
+
+  .case-name,
+  .case__features__title {
+    font-size: 2.2rem; }
+
+  .case-name__descr {
+    font-size: 1.8rem; }
+
+  .case__title {
+    font-size: 2.4rem; }
+
+  .case__features li {
+    width: 50%; }
+
+  .case__features__descr {
+    font-size: 1.5rem; } }
 @media (max-width: 399px) {
   .header__top .btn,
   .header__right__phones a .ico {
-    display: none; } }
+    display: none; }
+
+  .case__content {
+    width: 48em;
+    height: 55em; } }
 /*399*/
 
 /*# sourceMappingURL=style.css.map */
