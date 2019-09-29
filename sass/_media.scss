@@ -248,7 +248,8 @@
 	.form__subtitle{
 		font-size: 1rem;
 	}
-	.input__title{
+	.input__title,
+	.stages__descr{
 		font-size: 12px;
 	}
 	.input__container{
@@ -268,7 +269,8 @@
 	.rates__price{
 		font-size: 40px;
 	}
-	.rate__features li{
+	.rate__features li,
+	.stages__title{
 		font-size: 16px;
 	}
 	.rate__features{
@@ -287,6 +289,19 @@
 	}
 	.offer__descr{
 		font-size: 1.25rem;
+	}
+	.stages-list-container{
+		overflow-y: auto;
+	}
+	.stages__list li{
+		width: 300px;
+	}
+	.stages__item{
+		width: 260px;
+		padding: 20px;
+	}
+	.stages .slider-tips{
+		display: flex;
 	}
 }
 /*1024*/ 
