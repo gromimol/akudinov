@@ -1,0 +1,50 @@
+/*quick-order*/ 
+.quick-order{
+	.form__notice{
+		font-size: .75em;
+		color: rgba(#fff, .6);
+		max-width: 700px;
+		margin: 2em auto 0;
+		padding: 3em 3em 0;
+		border-top: 1px solid #3d79bb;
+		a{
+			color: rgba(#fff, .6);
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
+.order-form__row{
+	align-items: flex-end;
+}
+.order-form__item{
+	width: 31%;
+	margin-bottom: 2em;
+	.input-wrapper{
+		margin-bottom: 0;
+	}
+	.input__title{
+		color: #fff;
+		font-size: 12px;
+	}
+	.input__container{
+		background-color: #3d79bb;
+		border: none;
+		height: 40px;
+		font-size: 15px;
+	}
+	.input{
+		background-color: #3d79bb;
+		color: #fff;
+		font-weight: 700;
+		font-size: 15px;
+	}
+	.input__container .ico{
+		color: #fff;
+	}
+	.btn{
+		padding: 0;
+		height: 40px;
+	}
+}

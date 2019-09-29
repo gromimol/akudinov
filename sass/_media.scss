@@ -303,6 +303,15 @@
 	.stages .slider-tips{
 		display: flex;
 	}
+	.order-form__row{
+		flex-wrap: wrap;
+	}
+	.order-form__item{
+		width: 100%;
+	}
+	.quick-order .form__notice{
+		font-size: 12px;
+	}
 }
 /*1024*/ 
 
@@ -484,6 +493,12 @@
 	}
 	.block__name{
 		font-size: 16px;
+	}
+	.quick-order .form__notice{
+		padding: 30px 0 0;
+	}
+	.order-form__item{
+		margin-bottom: 15px;
 	}
 }
 /*568*/
