@@ -149,6 +149,9 @@ a{
 }
 .section{
 	padding: 3em 0;
+	.tab-content.active{
+		padding-bottom: 0;
+	}
 }
 .white-color{
 	color: #fff;
@@ -191,8 +194,21 @@ a{
 .green{
 	color: $green;
 }
+.blue{
+	color: $blue;
+}
 .grey-bg{
 	background-color: $grey-bg;
+}
+.blue-bg{
+	background-color: $blue;
+}
+.ruble{
+	&::after{
+		content: '\20BD';
+		padding-left: .3em;
+		font-size: .8em;
+	}
 }
 .svg-sprite,
 .tablet{

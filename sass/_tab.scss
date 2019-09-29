@@ -1,15 +1,23 @@
 /*tab*/ 
+.tab-list-container{
+	overflow-y: auto;
+}
 .tab-list{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	border-bottom: 1px solid #bac0c9;
-
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 	li{
 		padding: 0 1.5em;
 		a{
 			display: block;
 			font-size: 1rem;
 			font-weight: 700;
+			white-space: nowrap;
 			color: $grey;
 			padding-bottom: .5em;
 			position: relative;

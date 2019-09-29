@@ -29,6 +29,9 @@
 	.banner-slider__arrows{
 		width: 95%;
 	}
+	.rates__item{
+		padding: 0 .5em;
+	}
 }
 /*1600*/ 
 @media(max-width: 1360px){
@@ -94,6 +97,25 @@
 	}
 	.input__container .input{
 		font-size: .75em;
+	}
+	.block-title{
+		margin-bottom: 40px;
+	}
+	.block__name{
+		font-size: 27px;
+	}
+	.block__descr,
+	.tab-list li a,
+	.tab-content p,
+	.notice-section{
+		font-size: 16px;
+	}
+	.section{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.tab-list{
+		font-size: 16px;
 	}
 }
 /*1360*/ 
@@ -233,11 +255,51 @@
 		font-size: 14px;
 		height: 35px;
 	}
-	.form__notice{
+	.form__notice,
+	.next-item{
 		font-size: 10px;
+	}
+	.rates__block{
+		width: 432px;
+	}
+	.rates__block__title{
+		font-size: 20px;
+	}
+	.rates__price{
+		font-size: 40px;
+	}
+	.rate__features li{
+		font-size: 16px;
+	}
+	.rate__features{
+		margin-bottom: 15px;
 	}
 }
 /*1024*/ 
+
+@media(max-width: 1023px){
+	.tab-list{
+		border: none;
+	}
+	.tab-list li{
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+	.tab-list li a{
+		font-size: 14px;
+		padding: 6px 12px;
+		background-color: #778191;
+		color: #fff;
+		&.active{
+			background-color: $green;
+			color: #fff;
+		}
+		&::after{
+			display: none;
+		}
+	}
+}
+/*1023*/
 @media(max-width: 768px){
 	
 	.banner-slider__title{
@@ -367,9 +429,30 @@
 		height: 8px;
 		border-width: 1px;
 	}
-
+	.slider-tips__text{
+		font-size: 12px;
+	}
 }
 /*568*/
+
+@media(max-width: 480px){
+	.rates__block{
+		width: 300px;
+	}
+	.rates__block__title,
+	.rate__features li{
+		font-size: 12px;
+	}
+	.rates__price{
+		font-size: 25px;
+	}
+	.rate__features li{
+		img{
+			height: 20px;
+			object-fit: contain;
+		}
+	}
+}
 
 @media(max-width: 399px){
 	.header__top .btn,
