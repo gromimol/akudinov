@@ -312,6 +312,16 @@
 	.quick-order .form__notice{
 		font-size: 12px;
 	}
+	.rait span{
+		width: 12px;
+		height: 12px;
+	}
+	.video__title{
+		font-size: 1.5rem;
+	}
+	.company-logo{
+		height: 2em;
+	}
 }
 /*1024*/ 
 
@@ -439,6 +449,9 @@
 	.partner__list li{
 		width: 16.666%;
 	}
+	.text-review__content{
+		width: 35em;
+	}
 }
 /*768*/ 
 
@@ -528,6 +541,12 @@
 	.partner__list li{
 		width: 20%;
 	}
+	.video__title{
+		font-size: 14px;
+	}
+	.company-logo{
+		height: 25px;
+	}
 }
 /*568*/
 
@@ -614,6 +633,9 @@
 	.bonus__item--lg .bonus__item__descr,
 	.bonus__item__descr{
 		font-size: 12px;
+	}
+	.text-review__content{
+		width: 280px;
 	}
 }
 /*480*/ 

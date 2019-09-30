@@ -114,4 +114,103 @@ $(document).ready(function () {
 		}
 		]
 	});
+
+	$('.video-slider').slick({
+		slidesToShow: 5,
+		variableWidth: true,
+		infinite: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+	$('.document-slider').slick({
+		slidesToShow: 8,
+		variableWidth: true,
+		infinite: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 5
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+	$('.text-review-slider').slick({
+		slidesToShow: 3,
+		variableWidth: true,
+		infinite: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+	$('.video-slider__content').on('click',function (e) {
+		e.preventDefault();
+
+		$('body').addClass('noscroll');
+		$('.video-popup-overlay').show();
+		$('.video-popup').addClass('active');
+	});
+
+	$('.video-popup-close').on('click',function (e) {
+		e.preventDefault();
+
+		$('body').removeClass('noscroll');
+		$('.video-popup-overlay').hide();
+		$('.video-popup').removeClass('active');
+	})
+
+	$('.video-popup__slider').slick({
+		prevArrow: '<span class="prev-arrow"><svg width="16" height="30" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 16 30"><g><g><path d="M1,15l14,14" fill-opacity="0" fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="2"></path></g><g><path d="M15,1l-14,14" fill-opacity="0" fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="2"></path></g></g></svg></span>',
+		nextArrow: '<span class="next-arrow"><svg width="16" height="30" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 16 30"><g><g><path d="M15,15l-14,-14" fill-opacity="0" fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="2"></path></g><g><path d="M1,29l14,-14" fill-opacity="0" fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="1" stroke="currentColor" stroke-miterlimit="50" stroke-width="2"></path></g></g></svg></span>',
+		fade: true,
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				arrows: false
+			}
+		}
+		]
+	});
 })
