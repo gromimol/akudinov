@@ -322,6 +322,15 @@
 	.company-logo{
 		height: 2em;
 	}
+	.order-form__row{
+		.input__container .input{
+			font-size: 16px;
+			height: 40px;
+		}
+	}
+	textarea.input{
+		height: 80px !important;
+	}
 }
 /*1024*/ 
 
@@ -451,6 +460,17 @@
 	}
 	.text-review__content{
 		width: 35em;
+	}
+	.order-form__row{
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		.input-wrapper{
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+	.order-form__row .input-wrapper::before{
+		display: none;
 	}
 }
 /*768*/ 

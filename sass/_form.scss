@@ -25,6 +25,12 @@
 }
 .input-wrapper{
 	margin-bottom: 1.25em;
+	&--textarea{
+		.input__container .ico{
+			top: 0;
+			transform: translateY(0);
+		}
+	}
 }
 .input__title{
 	display: block;
@@ -34,26 +40,40 @@
 }
 .input__container{
 	height: 2.5em;
-	border: 1px solid #e6ecef;
+	position: relative;
 	border-radius: 3px;
-	padding-left: .875em;
+	
 	.ico{
 		width: .875em;
 		height: .875em;
 		color: $green;
 		margin-right: 1em;
+		position: absolute;
+		left: .875em;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	.input{
+		border: 1px solid #e6ecef;
+		border-radius: 3px;
 		display: block;
 		flex-grow: 1;
 		appearance: none;
-		border: none;
 		outline: none;
 		font-size: .875rem;
 		color: $black-text;
 		font-family: "FiraSans", sans-serif;
 		padding-right: 1em;
+		padding-left: 2.4em;
+		&:focus{
+			border-color: $green;
+		}
 	}
+}
+textarea.input{
+	height: 75px;
+	resize: none;
+	padding-top: 5px;
 }
 .form__notice{
 	font-size: .6rem;

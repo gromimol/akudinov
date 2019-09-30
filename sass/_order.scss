@@ -1,0 +1,49 @@
+/*order*/
+.order-form{
+	max-width: 900px;
+	margin: 0 auto;
+	counter-reset: number;
+	.btn-container{
+		margin: 3em 0;
+		.btn{
+			width: 100%;
+			max-width: 280px;
+		}
+	}
+	.form__notice{
+		font-size: 12px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		color: rgba(#778191, .5);
+		a{
+			color: rgba(#778191, .5);
+			&:hover{
+				color: rgba(#778191, .9);
+			}
+		}
+	}
+}
+.order-form__row{
+	margin-bottom: 20px;
+	.input-wrapper{
+		width: 48%;
+		position: relative;
+		padding-left: 3em;
+		&::before{
+			content: counter(number)'.';
+			counter-increment: number;
+			font-size: 3em;
+			font-weight: 700;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			color: rgba(#778191, .5);
+		}
+	}
+	&--full{
+		.input-wrapper{
+			width: 100%;
+		}
+	}
+}
