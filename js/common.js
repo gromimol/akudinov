@@ -99,4 +99,19 @@ $(document).ready(function () {
 		}
 		]
 	});
+
+	$('.team-slider').slick({
+		slidesToShow: 4,
+		variableWidth: true,
+		infinite: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 990,
+			settings: {
+				slidesToShow: 3
+			}
+		}
+		]
+	});
 })
