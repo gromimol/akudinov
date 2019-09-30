@@ -1,0 +1,46 @@
+/*callback-popup*/ 
+.callback-popup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 30;
+	transition: all .3s;
+	&.active{
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		visibility: visible;
+	}
+	.form__title{
+		color: $black-text;
+	}
+	.form__subtitle{
+		color: $grey;
+	}
+	.form__notice{
+		color: $green;
+		a{
+			color: $green;
+			&:hover{
+				color: $black-text;
+			}
+		}
+	}
+	.close-callback{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 15px;
+		height: 15px;
+		color: $black-text;
+		&:hover{
+			color: $red;
+		}
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

@@ -3,6 +3,11 @@
 	position: relative;
 	z-index: 12;
 } 
+.show-popup{
+	.header{
+		z-index: 0;
+	}
+}
 .header__top{
 	background-color: $dark-bg;
 	padding: 7px 0;

@@ -117,6 +117,9 @@
 	.tab-list{
 		font-size: 16px;
 	}
+	.footer-main__menu{
+		width: 73%;
+	}
 }
 /*1360*/ 
 
@@ -331,6 +334,9 @@
 	textarea.input{
 		height: 80px !important;
 	}
+	.footer__bottom{
+		font-size: 12px;
+	}
 }
 /*1024*/ 
 
@@ -357,6 +363,48 @@
 	}
 	.case__features__descr{
 		font-size: 1.2rem;
+	}
+	.footer-main,
+	.footer-main__menu{
+		flex-wrap: wrap;
+	}
+	.footer-main__contact,
+	.footer-main__menu{
+		width: 100%;
+	}
+	.footer-main__contact{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		align-items: flex-start;
+	}
+	.footer-main__menu__title{
+		font-size: 16px;
+	}
+	.footer-menu{
+		li{
+			a{
+				font-size: 12px;
+			}
+		}
+	}
+	.footer-main__menu__item{
+		margin-bottom: 30px;
+		padding-right: 20px;
+	}
+	.footer-option{
+		font-size: 12px;
+	}
+	.footer-phones .main-phone{
+		font-size: 14px;
+	}
+	.footer-phones .second-phone{
+		font-size: 12px;
+	}
+	.footer{
+		.logo{
+			font-size: 12px;
+		}
 	}
 }
 /*1023*/
@@ -472,6 +520,24 @@
 	.order-form__row .input-wrapper::before{
 		display: none;
 	}
+	.faq__img{
+		height: 130px;
+		margin-bottom: 15px;
+	}
+	.faq__title{
+		font-size: 16px;
+		margin-bottom: 1em;
+	}
+	.faq__text{
+		font-size: 12px;
+	}
+	.faq__content{
+		width: 280px;
+	}
+	.footer-main__menu__item{
+		padding-right: 0;
+		width: 50%;
+	}
 }
 /*768*/ 
 
@@ -567,6 +633,30 @@
 	.company-logo{
 		height: 25px;
 	}
+	.order-form .form__notice{
+		text-align: left;
+	}
+	.footer-option{
+		.header__top__options__item {
+			display: flex;
+		}
+	}
+	.footer-phones{
+		width: 100%;
+		text-align: center;
+	}
+	.footer-main__contact{
+		flex-wrap: wrap;
+	}
+	.callback-popup{
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+		.form{
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 /*568*/
 
@@ -656,6 +746,17 @@
 	}
 	.text-review__content{
 		width: 280px;
+	}
+	.footer-main__menu__item{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer-option{
+		width: 100%;
+		.header__top__options__item{
+			justify-content: center;
+		}
 	}
 }
 /*480*/ 
