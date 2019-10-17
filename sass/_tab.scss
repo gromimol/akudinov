@@ -47,6 +47,9 @@
 	}
 	&--white{
 		border-color: #628fc5;
+		& + .line{
+			background-color: #fff;
+		}
 		li{
 			a{
 				color:rgba(#fff, .6);

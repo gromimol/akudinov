@@ -1250,6 +1250,8 @@ textarea.input {
           opacity: 1; }
   .tab-list--white {
     border-color: #628fc5; }
+    .tab-list--white + .line {
+      background-color: #fff; }
     .tab-list--white li a {
       color: rgba(255, 255, 255, 0.6); }
       .tab-list--white li a.active {

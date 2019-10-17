@@ -37,16 +37,16 @@ $(document).ready(function () {
 	});
 
 	// tabs
-	$('.tab-list a.active').click();
-	$('.tab-list').on('click', 'a', function (e) {
+	$(document).on('click', '.tab-list a', function (e) {
 		e.preventDefault();
 
 		var dataTab = $(this).attr('data-tab');
 
-		var left = $(this).offset().left - $('.tab-list').offset().left,
+		var left = $(this).offset().left - $(this).parents('.tab-list').offset().left,
 		width = $(this).width();
 
-		$('.line').css({
+
+		$(this).parents('.section').find('.line').css({
 			'margin-left': left,
 			'width': width
 		});
@@ -56,6 +56,8 @@ $(document).ready(function () {
 		$(this).closest('.tab-container').find('.tab-content').fadeOut();
 		$('#' + dataTab).fadeIn('slow');
 	});
+
+	$('.tab-list a.active').trigger( "click" );
 	
 
 	// slider
