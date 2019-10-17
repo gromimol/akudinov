@@ -35,6 +35,9 @@
 }
 /*1600*/ 
 @media(max-width: 1360px){
+	.dragscroll{
+		overflow: hidden;
+	}
 	html{
 		font-size: 1.1vw;
 	}

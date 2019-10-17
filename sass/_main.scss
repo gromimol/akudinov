@@ -243,14 +243,46 @@ b{
 // }
 
 /* хром, сафари */
-.element::-webkit-scrollbar { width: 0; }
+.elemeby::-webkit-scrollbar { width: 0; }
 
 /* ie 10+ */
-.element { -ms-overflow-style: none; }
+.elemeby { -ms-overflow-style: none; }
 
 /* фф (свойство больше не работает, других способов тоже нет)*/
-.element { overflow: -moz-scrollbars-none; }
+.elemeby { overflow: -moz-scrollbars-none; }
 
+
+.drag-container{
+	width: 100%;
+	max-width: 1400px;
+	display: flex;
+	margin: 0 auto;
+}
+.dragscroll {
+    overflow: hidden;
+}
+
+
+.vertical.dragscroll {
+    width: 270px;
+    height: 380px;
+    float: left;
+    padding: 10px;
+}
+
+.horizontal {
+    cursor : -webkit-grab;
+    cursor : -moz-grab;
+    cursor : -o-grab;
+    cursor : grab;
+}
+
+.horizontal:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
 
 
 

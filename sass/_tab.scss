@@ -63,12 +63,21 @@
 }
 
 .tab-content{
-	height: 0;
-	overflow: hidden;
+	// max-height: 0;
+	// opacity: 0;
+	// transform: skewX(0);
+	// overflow: hidden;
+	// transition: max-height .5s;
+	padding: 4.375em 0;
+	display: none;
 	&.active{
 		display: block;
-		height: auto;
-		padding: 4.375em 0;
+		max-height: 100%;
+		position: relative;
+		
+		opacity: 1;
+		transform: skewX(1);
+		transition: all .5s;
 	}
 	p{
 		font-size: 1.125rem;
@@ -79,3 +88,4 @@
 		}
 	}
 }
+
