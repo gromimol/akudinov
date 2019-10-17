@@ -2618,7 +2618,10 @@ textarea.input {
     font-size: 12px; }
 
   .footer .logo {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .line {
+    display: none; } }
 /*1023*/
 @media (max-width: 768px) {
   .banner-slider__title {
