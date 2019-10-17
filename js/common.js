@@ -37,18 +37,25 @@ $(document).ready(function () {
 	});
 
 	// tabs
+	$('.tab-list a.active').click();
 	$('.tab-list').on('click', 'a', function (e) {
 		e.preventDefault();
 
 		var dataTab = $(this).attr('data-tab');
+
+		var left = $(this).offset().left - $('.tab-list').offset().left,
+		width = $(this).width();
+
+		$('.line').css({
+			'margin-left': left,
+			'width': width
+		});
 
 		$(this).closest('.tab-container').find('.tab-list a').removeClass('active');
 		$(this).addClass('active');
 		$(this).closest('.tab-container').find('.tab-content').fadeOut();
 		$('#' + dataTab).fadeIn('slow');
 	});
-
-	// Dragscroll
 	
 
 	// slider
