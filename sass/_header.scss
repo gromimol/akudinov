@@ -65,7 +65,7 @@
 	height: 2em;
 	&:hover{
 		border-color: $blue;
-		transform: translateY(-2px);
+		opacity: .7;
 	}
 	.ico{
 		width: 1em;

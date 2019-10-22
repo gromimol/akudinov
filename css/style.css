@@ -230,11 +230,7 @@ a {
   -webkit-transition: all .3s;
   transition: all .3s; }
   .btn:hover {
-    opacity: .8;
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-    -webkit-box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.8);
-            box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.8); }
+    opacity: .7; }
   .btn--green {
     background-color: #22b573;
     color: #fff; }
@@ -610,8 +606,7 @@ b {
   height: 2em; }
   .user-btn:hover {
     border-color: #286ab3;
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px); }
+    opacity: .7; }
   .user-btn .ico {
     width: 1em;
     height: 1em;
@@ -1293,7 +1288,12 @@ textarea.input {
 
 /*rates*/
 .rates-slider {
-  margin: 0 auto; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: none;
+  margin: 0 auto;
+  padding-bottom: 30px; }
   .rates-slider .slick-list {
     overflow: visible;
     padding-top: 15px;
@@ -1304,12 +1304,6 @@ textarea.input {
     display: flex; }
     .rates-slider .slick-track::before, .rates-slider .slick-track::after {
       display: none; }
-
-.rates-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: none; }
 
 .rates__item {
   min-height: auto;
@@ -1553,6 +1547,9 @@ textarea.input {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff; }
+  .case__body .btn--lg {
+    font-size: 1rem;
+    padding: 1.6em; }
 
 .case-logo {
   position: absolute;
@@ -1741,10 +1738,11 @@ textarea.input {
 
 /*team*/
 .team-slider {
-  max-width: 1600px;
   margin: 0 auto 2em; }
   .team-slider .slick-list {
     overflow: visible; }
+  .team-slider .drag-container {
+    max-width: 1600px; }
 
 .team-slider__item {
   padding: 0 1em; }

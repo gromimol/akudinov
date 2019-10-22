@@ -1,9 +1,11 @@
 /*team*/ 
 .team-slider{
-	max-width: 1600px;
 	margin: 0 auto 2em;
 	.slick-list{
 		overflow: visible;
+	}
+	.drag-container{
+		max-width: 1600px;
 	}
 }
 .team-slider__item{

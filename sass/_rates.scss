@@ -1,7 +1,9 @@
 /*rates*/ 
 .rates-slider{
-	// max-width: 1400px;
+	display: flex;
+	max-width: none;
 	margin: 0 auto;
+	padding-bottom: 30px;
 	.slick-list{
 		overflow: visible;
 		padding-top: 15px;
@@ -18,10 +20,6 @@
 
 
 
-.rates-slider{
-	display: flex;
-	max-width: none;
-}
 .rates__item{
 	min-height: auto;
 	height: auto;
